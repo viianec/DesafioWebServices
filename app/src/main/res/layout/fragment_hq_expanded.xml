@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorBlueDark"
+    tools:context=".hq_expandedFragment">
+
+    <ImageView
+        android:id="@+id/icClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/ic_baseline_close_24"
+        android:contentDescription="Close"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        app:tint="@color/colorPrimary" />
+
+    <ImageView
+        android:id="@+id/imgHqExpanded"
+        android:layout_width="350dp"
+        android:layout_height="550dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/icClose"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:src="@drawable/hqs"
+        android:scaleType="fitXY"
+        android:padding="5dp"
+        android:layout_margin="20dp"
+        android:contentDescription="ExpandedImage"
+        android:background="@color/colorPrimary"
+
+
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
