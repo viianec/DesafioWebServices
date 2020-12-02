@@ -39,8 +39,8 @@ class NetworkInterceptor : Interceptor {
         private const val API_KEY = "apikey"
         private const val HASH = "hash"
 
-        private const val PRIVATE_KEY = "0dd0c16fedb8a02985977eafca66b49f5e6a526f"
-        const val PUBLIC_KEY = "6eb7e8896ec5850c52515a8a23ee97f0"
+        private const val PRIVATE_KEY = "8ce36ff7a6b59688b7de880eca6042f6fa9f9371"
+        const val PUBLIC_KEY = "6cc22b8a97370f815e7c4ae6d2e2e4db"
 
         fun String.md5(): String {
             val md = MessageDigest.getInstance("MD5")

@@ -10,7 +10,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="20dp"
+        android:layout_marginHorizontal="@dimen/dimen_20ddp"
         android:background="@drawable/square_shape"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -21,20 +21,20 @@
             android:id="@+id/txtWelcome"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:text="Welcome to the Marvel HQ's"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:text="@string/welcome_to_the_marvel_hq_s"
             android:textAlignment="center"
             android:textColor="@color/colorPrimary"
-            android:textSize="28sp"
-            android:layout_marginHorizontal="5dp"
+            android:textSize="@dimen/dimen_28sp"
+            android:layout_marginHorizontal="@dimen/dimen_5dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <androidx.cardview.widget.CardView
-            android:layout_width="363dp"
-            android:layout_height="298dp"
-            android:layout_marginTop="20dp"
+            android:layout_width="@dimen/dimen_363dp"
+            android:layout_height="@dimen/dimen_298dp"
+            android:layout_marginTop="@dimen/dimen_20ddp"
             app:cardCornerRadius="@dimen/dimen_15dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -44,21 +44,21 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="10dp">
+                android:layout_marginHorizontal="@dimen/dimen_10dp">
 
                 <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/txtEmailLogin"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Email"
+                    android:hint="@string/email"
                     android:backgroundTint="@color/colorAccent"
                     android:textColorHint="@color/colorRed2"
                     app:boxBackgroundColor="@color/colorPrimary"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginTop="@dimen/dimen_20ddp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent">
 
                     <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txtEmailLogin"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:inputType="textEmailAddress"
@@ -70,15 +70,16 @@
                     android:id="@+id/txtPasswordLogin"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Password"
+                    android:hint="@string/password"
                     android:backgroundTint="@color/colorAccent"
                     android:textColorHint="@color/colorRed2"
                     app:boxBackgroundColor="@color/colorPrimary"
-                    android:layout_marginTop="80dp"
+                    android:layout_marginTop="@dimen/dimen_80dp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent">
 
                     <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtPasswordLogin"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:inputType="textPassword"
@@ -91,8 +92,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     app:layout_constraintTop_toBottomOf="@id/txtPasswordLogin"
-                    android:text="Remember"
-                    android:textSize="18dp"
+                    android:text="@string/remember"
+                    android:textSize="@dimen/dimen_18sp"
                     android:textColor="@color/colorGrey1"/>
 
                 <Button
@@ -100,20 +101,21 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     app:layout_constraintTop_toBottomOf="@id/ckRemember"
-                    android:layout_marginTop="20dp"
-                    android:text="LOG IN"
+                    android:layout_marginTop="@dimen/dimen_20ddp"
+                    android:text="@string/log_in"
                     android:background="@color/colorRed2"
                     android:textColor="@color/colorPrimary"/>
 
                 <Button
+                    android:id="@+id/btnCreatAccount"
                     style="@style/Widget.AppCompat.Button.Borderless.Colored"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginStart="100dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginEnd="100dp"
-                    android:text="Create Account"
+                    android:layout_marginStart="@dimen/dimen_100dp"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    android:layout_marginEnd="@dimen/dimen_100dp"
+                    android:text="@string/create_account"
                     android:textColor="@color/colorGrey2"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"

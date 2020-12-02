@@ -6,7 +6,7 @@
     android:layout_height="wrap_content"
     android:background="@color/colorBlueDark"
     android:layout_marginHorizontal="5dp"
-    tools:context=".Hqs_list_itemFragment">
+    tools:context=".comic.view.Hqs_list_itemFragment">
 
     <RelativeLayout
         android:id="@+id/rltHq"
@@ -19,24 +19,23 @@
 
         <ImageView
             android:id="@+id/imgHqs"
-            android:layout_width="150dp"
-            android:layout_height="200dp"
-            android:padding="4dp"
+            android:layout_width="@dimen/dimen_150dp"
+            android:layout_height="@dimen/dimen_200dp"
+            android:padding="@dimen/dimen_4dp"
             tools:src="@drawable/hqs"
-            android:contentDescription="HQs"
-
+            android:contentDescription="@string/hqs"
             android:scaleType="fitXY"
              />
     </RelativeLayout>
 
     <TextView
-        android:id="@+id/txtComicNumber"
+        android:id="@+id/txtHqNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         tools:text="#96"
         android:textColor="@color/colorPrimary"
         android:textStyle="bold"
-        android:layout_marginVertical="10dp"
+        android:layout_marginVertical="@dimen/dimen_10dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/rltHq"
         app:layout_constraintBottom_toBottomOf="parent"

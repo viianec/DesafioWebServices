@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorBlueDark"
-    tools:context=".HqFragment">
+    tools:context=".comic.view.HqFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -13,8 +13,8 @@
         <ImageView
             android:id="@+id/imgCover"
             android:layout_width="match_parent"
-            android:layout_height="220dp"
-            android:contentDescription="Cover"
+            android:layout_height="@dimen/dimen_220dp"
+            android:contentDescription="@string/cover"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -24,14 +24,14 @@
 
         <ImageView
             android:id="@+id/imgHqCover"
-            android:layout_width="150dp"
-            android:layout_height="200dp"
+            android:layout_width="@dimen/dimen_150dp"
+            android:layout_height="@dimen/dimen_220dp"
             tools:src="@drawable/hqs"
             android:background="@color/colorPrimary"
             android:scaleType="fitXY"
-            android:padding="5dp"
-            android:layout_margin="10dp"
-            android:contentDescription="HQ"
+            android:padding="@dimen/dimen_5dp"
+            android:layout_margin="@dimen/dimen_10dp"
+            android:contentDescription="@string/hq"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/hqToolbar"
             />
@@ -43,12 +43,12 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@id/imgHqCover"
-            android:textSize="20sp"
+            android:textSize="@dimen/dimen_20sp"
             android:textStyle="bold"
             android:textColor="@color/colorPrimary"
             android:textAlignment="center"
             android:textAllCaps="true"
-            android:layout_margin="10dp"
+            android:layout_margin="@dimen/dimen_20ddp"
             tools:text="Werewolf by Night (2020) #2" />
 
         <TextView
@@ -59,22 +59,22 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             android:textColor="@color/colorPrimary"
-            android:layout_marginHorizontal="10dp"
-            android:layout_marginTop="20dp"
-            android:textSize="16sp"
-            android:text="NIGHT OF THE CREEPS! Jake’s attempt to get to the bottom of his company’s questionable practices leads to an all-out monster brawl! As Werewolf by Night gets in over his head, Red Wolf and the law are getting closer! With Jake’s entire life in chaos, the only way out may be to fully embrace the secret history of the Werewolf by Night!"
+            android:layout_marginHorizontal="@dimen/dimen_10dp"
+            android:layout_marginTop="@dimen/dimen_20ddp"
+            android:textSize="@dimen/dimen_16sp"
+            android:text="@string/night_of_the_creeps_jake_s_attempt_to_get_to_the_bottom_of_his_company_s_questionable_practices_leads_to_an_all_out_monster_brawl_as_werewolf_by_night_gets_in_over_his_head_red_wolf_and_the_law_are_getting_closer_with_jake_s_entire_life_in_chaos_the_only_way_out_may_be_to_fully_embrace_the_secret_history_of_the_werewolf_by_night"
             />
 
         <TextView
             android:id="@+id/txtPublished"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_marginStart="10dp"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:layout_marginStart="@dimen/dimen_10dp"
             app:layout_constraintTop_toBottomOf="@id/txtDescriptionHQ"
             app:layout_constraintStart_toStartOf="parent"
             android:text="Published"
-            android:textSize="16sp"
+            android:textSize="@dimen/dimen_16sp"
             android:textColor="@color/colorPrimary"
             android:textStyle="bold"
             />
@@ -83,10 +83,10 @@
             android:id="@+id/txtPublishedDate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_marginStart="10dp"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:layout_marginStart="@dimen/dimen_10dp"
             tools:text="April 30, 2014"
-            android:textSize="16sp"
+            android:textSize="@dimen/dimen_16sp"
             android:textColor="@color/colorPrimary"
             app:layout_constraintTop_toBottomOf="@id/txtDescriptionHQ"
             app:layout_constraintStart_toEndOf="@id/txtPublished"
@@ -97,24 +97,24 @@
             android:id="@+id/txtPrice"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Price"
+            android:text="@string/price"
             android:textStyle="bold"
-            android:textSize="16sp"
+            android:textSize="@dimen/dimen_16sp"
             android:textColor="@color/colorPrimary"
-            android:layout_marginTop="10dp"
-            android:layout_marginStart="10dp"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:layout_marginStart="@dimen/dimen_10dp"
             app:layout_constraintTop_toBottomOf="@id/txtPublished"
             app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
-            android:id="@+id/txtPrice$"
+            android:id="@+id/txtPrice1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             tools:text="$ 5,99"
-            android:textSize="16sp"
+            android:textSize="@dimen/dimen_16sp"
             android:textColor="@color/colorPrimary"
-            android:layout_marginTop="10dp"
-            android:layout_marginStart="10dp"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:layout_marginStart="@dimen/dimen_10dp"
             app:layout_constraintTop_toBottomOf="@id/txtPublished"
             app:layout_constraintStart_toEndOf="@id/txtPrice"
             />
@@ -123,12 +123,12 @@
             android:id="@+id/txtPage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Pages"
+            android:text="@string/pages"
             android:textStyle="bold"
-            android:textSize="16sp"
+            android:textSize="@dimen/dimen_16sp"
             android:textColor="@color/colorPrimary"
-            android:layout_marginTop="10dp"
-            android:layout_marginStart="10dp"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:layout_marginStart="@dimen/dimen_10dp"
             app:layout_constraintTop_toBottomOf="@id/txtPrice"
             app:layout_constraintStart_toStartOf="parent"
             />
@@ -138,10 +138,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             tools:text="38"
-            android:textSize="16sp"
+            android:textSize="@dimen/dimen_16sp"
             android:textColor="@color/colorPrimary"
-            android:layout_marginTop="10dp"
-            android:layout_marginStart="20dp"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:layout_marginStart="@dimen/dimen_20ddp"
             app:layout_constraintTop_toBottomOf="@id/txtPrice"
             app:layout_constraintStart_toEndOf="@id/txtPrice"
             />
@@ -171,7 +171,7 @@
             app:layout_constraintTop_toTopOf="parent"
             android:minHeight="?attr/actionBarSize"
             android:theme="?attr/actionBarTheme"
-            android:padding="10dp"
+            android:padding="@dimen/dimen_10dp"
             >
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -181,11 +181,11 @@
                     android:id="@+id/imgBack"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginTop="@dimen/dimen_5dp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    android:contentDescription="Back"
+                    android:contentDescription="@string/back"
                     android:src="@drawable/ic_baseline_arrow_back_24"
                     app:tint="@color/colorPrimary" />
             </androidx.constraintlayout.widget.ConstraintLayout>

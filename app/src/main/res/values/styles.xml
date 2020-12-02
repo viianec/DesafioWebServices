@@ -1,15 +1,15 @@
 <resources>
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorBlueDark</item>
+        <item name="colorPrimary">@color/colorRed2</item>
+        <item name="colorPrimaryDark">@color/colorRed1</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
     <style name="AppThemeSplashScreen" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorBlueDark</item>
+        <item name="colorPrimary">@color/colorRed2</item>
+        <item name="colorPrimaryDark">@color/colorRed1</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 </resources>

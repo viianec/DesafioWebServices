@@ -3,4 +3,23 @@
     <string name="splash_screen">Splash Screen</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="back">BACK</string>
+    <string name="register">Register</string>
+    <string name="nome">Nome</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="save">SAVE</string>
+    <string name="user">USER</string>
+    <string name="welcome_to_the_marvel_hq_s">Welcome to the Marvel HQ\'s</string>
+    <string name="remember">Remember</string>
+    <string name="log_in">LOG IN</string>
+    <string name="create_account">Create Account</string>
+    <string name="hqs">HQs</string>
+    <string name="close">Close</string>
+    <string name="cover">Cover</string>
+    <string name="hq">HQ</string>
+    <string name="night_of_the_creeps_jake_s_attempt_to_get_to_the_bottom_of_his_company_s_questionable_practices_leads_to_an_all_out_monster_brawl_as_werewolf_by_night_gets_in_over_his_head_red_wolf_and_the_law_are_getting_closer_with_jake_s_entire_life_in_chaos_the_only_way_out_may_be_to_fully_embrace_the_secret_history_of_the_werewolf_by_night">NIGHT OF THE CREEPS! Jake’s attempt to get to the bottom of his company’s questionable practices leads to an all-out monster brawl! As Werewolf by Night gets in over his head, Red Wolf and the law are getting closer! With Jake’s entire life in chaos, the only way out may be to fully embrace the secret history of the Werewolf by Night!</string>
+    <string name="price">Price</string>
+    <string name="pages">Pages</string>
+    <string name="splash">Splash</string>
 </resources>

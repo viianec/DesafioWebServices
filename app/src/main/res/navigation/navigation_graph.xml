@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.marvel.login.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_hq_list_fragment"
+            app:destination="@id/hq_list_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.marvel.register.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_registerFragment_to_hq_list_fragment"
+            app:destination="@id/hq_list_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/hq_list_fragment"
+        android:name="com.example.marvel.comic.view.HqListFragment"
+        android:label="fragment_hq_list_fragment"
+        tools:layout="@layout/fragment_hq_list_fragment" >
+        <action
+            android:id="@+id/action_hq_list_fragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/action_hq_list_fragment_to_hqFragment"
+            app:destination="@id/hqFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/hqFragment"
+        android:name="com.example.marvel.comic.view.HqFragment"
+        android:label="fragment_hq"
+        tools:layout="@layout/fragment_hq" >
+        <action
+            android:id="@+id/action_hqFragment_to_hq_list_fragment"
+            app:destination="@id/hq_list_fragment" />
+        <action
+            android:id="@+id/action_hqFragment_to_hq_expandedFragment"
+            app:destination="@id/hq_expandedFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/hq_expandedFragment"
+        android:name="com.example.marvel.comic.view.HqExpandedFragment"
+        android:label="fragment_hq_expanded"
+        tools:layout="@layout/fragment_hq_expanded" >
+        <action
+            android:id="@+id/action_hq_expandedFragment_to_hqFragment"
+            app:destination="@id/hqFragment" />
+    </fragment>
+</navigation>

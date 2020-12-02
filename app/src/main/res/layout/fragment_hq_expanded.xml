@@ -4,8 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/colorBlueDark"
-    tools:context=".hq_expandedFragment">
+    android:background="@color/colorBlueDark">
 
     <ImageView
         android:id="@+id/icClose"
@@ -14,23 +13,23 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:src="@drawable/ic_baseline_close_24"
-        android:contentDescription="Close"
-        android:layout_marginHorizontal="20dp"
-        android:layout_marginTop="20dp"
+        android:contentDescription="@string/close"
+        android:layout_marginHorizontal="@dimen/dimen_20ddp"
+        android:layout_marginTop="@dimen/dimen_20ddp"
         app:tint="@color/colorPrimary" />
 
     <ImageView
         android:id="@+id/imgHqExpanded"
-        android:layout_width="350dp"
-        android:layout_height="550dp"
+        android:layout_width="@dimen/dimen_350dp"
+        android:layout_height="@dimen/dimen_550dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/icClose"
         app:layout_constraintBottom_toBottomOf="parent"
         tools:src="@drawable/hqs"
         android:scaleType="fitXY"
-        android:padding="5dp"
-        android:layout_margin="20dp"
+        android:padding="@dimen/dimen_5dp"
+        android:layout_margin="@dimen/dimen_20ddp"
         android:contentDescription="ExpandedImage"
         android:background="@color/colorPrimary"
 
