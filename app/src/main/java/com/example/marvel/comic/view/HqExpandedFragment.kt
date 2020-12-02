@@ -10,6 +10,7 @@ import android.view.Window
 import android.widget.ImageView
 import androidx.fragment.app.DialogFragment
 import androidx.navigation.findNavController
+import androidx.navigation.fragment.findNavController
 import com.example.marvel.R
 import com.squareup.picasso.Picasso
 
@@ -29,7 +30,7 @@ class HqExpandedFragment : DialogFragment(){
     }
     private fun close(view: View) {
         view.findViewById<ImageView>(R.id.icClose).setOnClickListener {
-            view.findNavController().navigate(R.id.action_hq_expandedFragment_to_hqFragment)
+            findNavController().navigateUp()
         }
     }
 

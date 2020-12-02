@@ -8,7 +8,7 @@ import retrofit2.http.Query
 
 interface IHqEndpoint {
     @GET("/v1/public/comics")
-    suspend fun getHqs(@Query("offset") offset: Int? = 0): ResponseModel<HqModel>
+    suspend fun getHqs(@Query("offset") offset: Int? = 0, @Query("orderBy") orderBy:String = "title"): ResponseModel<HqModel>
 
     companion object {
         val endpoint: IHqEndpoint by lazy {
